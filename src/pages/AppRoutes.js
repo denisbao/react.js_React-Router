@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom'
+import { Redirect, Route, Switch } from 'react-router-dom'
 import ProductDetail from './ProductDetail'
 import Products from './Products'
 import Welcome from './Welcome'
@@ -6,6 +6,9 @@ import Welcome from './Welcome'
 const AppRoutes = () => {
   return (
     <Switch>
+      <Route path="/" exact>
+        <Redirect to="/welcome" />
+      </Route>
       <Route path="/welcome">
         <Welcome />
       </Route>
