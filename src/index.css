@@ -22,3 +22,11 @@ h3,
 p {
   color: #042b5f;
 }
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-indent: -2em;
+}
